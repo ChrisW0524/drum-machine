@@ -1,0 +1,70 @@
+$background-color: #2c3e50;
+$main-color: #ecf0f1;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root{
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#drum-machine{
+  max-width: 80%;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    margin-bottom: 25px;
+  }
+}
+
+
+#display{
+  width: 50%;
+  background-color: $background-color;
+  color:$main-color;
+  border-radius: 15px;
+  padding: 15px;
+  h1{
+    margin: 0;
+  }
+}
+
+#pad-bank{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+}
+
+.drum-pad{
+  background-color: #2c3e50;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: $main-color
+}
