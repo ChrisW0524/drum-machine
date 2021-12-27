@@ -1,3 +1,5 @@
+[Link to site](https://chrisw0524.github.io/drum-machine/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
